@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{
+  height: 100%;
+  font-family: Breathe_Fire;
+}
+
+
+body{
+  background-image: url(/assets/img/tela-principal-background.jpg);
+}
+
+.apresentacao{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.font-apr{
+  font-size: 300%;
+  color: #FFFFFF;
+}
+
+.font-p{
+  font-size: 110%;
+  color: #FFFFFF;
+}
+
+@font-face{
+  font-family: Breathe_Fire;
+  src: url('/assets/fonts/Breathe_Fire.otf');
+  color: #FFFFFF;
+}
+
+hr.style18 {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.style18:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+
