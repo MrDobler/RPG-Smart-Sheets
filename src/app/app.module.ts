@@ -6,13 +6,23 @@ import { TelaPrincipalComponent } from './tela-principal/tela-principal.componen
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { routing } from './app.routing';
+import { FichasComponent } from './fichas/fichas.component';
+import { CardsComponent } from './cards/cards.component';
+import { FichacompletaComponent } from './fichacompleta/fichacompleta.component';
+import { FichaPathfinderComponent } from './ficha-pathfinder/ficha-pathfinder.component';
+import { CardFichasComponent } from './card-fichas/card-fichas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TelaPrincipalComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    FichasComponent,
+    CardsComponent,
+    FichacompletaComponent,
+    FichaPathfinderComponent,
+    CardFichasComponent
   ],
   imports: [
     BrowserModule,

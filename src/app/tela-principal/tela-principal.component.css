@@ -1,0 +1,22 @@
+.apresentacao{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.font-title{
+  font-size: 450%;
+  color: #FFFFFF;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.font-apr{
+  font-size: 300%;
+  color: #FFFFFF;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.font-p{
+  font-size: 110%;
+  color: #FFFFFF;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
