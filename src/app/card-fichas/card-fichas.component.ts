@@ -15,7 +15,7 @@ export class CardFichasComponent implements OnInit {
       link: '../fichaPathfinder'
     },
     {
-      titulo: 'Ficha D&D 5',
+      titulo: 'Ficha Dungeons and Dragons 5',
       acao: 'Abrir Ficha',
       imagem: '/assets/img/d&d.jpg',
       link: '../ficha'
