@@ -18,7 +18,11 @@ export class HeaderComponent implements OnInit {
   }
 
   switchAba() {
-    this.abaModal = 'login' ? 'cadastro' : 'login';
+    if (this.abaModal === 'login') {
+      this.abaModal = 'cadastro';
+    }else {
+      this.abaModal = 'login';
+    }
   }
 
 }

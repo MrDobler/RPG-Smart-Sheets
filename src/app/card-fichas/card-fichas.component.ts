@@ -19,6 +19,12 @@ export class CardFichasComponent implements OnInit {
       acao: 'Abrir Ficha',
       imagem: '/assets/img/d&d.jpg',
       link: '../ficha'
+    },
+    {
+      titulo: 'Call of Cthulhu',
+      acao: 'Abrir Ficha',
+      imagem: '/assets/img/call_of_cthulhu.jpg',
+      link: '../ficha'
     }
   ];
 
