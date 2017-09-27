@@ -1,8 +1,8 @@
-import { FichaPathfinderComponent } from './ficha-pathfinder/ficha-pathfinder.component';
-import { FichasComponent } from './fichas/fichas.component';
+import { FichaPathfinderComponent } from './components/ficha-pathfinder/ficha-pathfinder.component';
+import { FichasComponent } from './components/fichas/fichas.component';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { TelaPrincipalComponent } from './tela-principal/tela-principal.component';
+import { LoginComponent } from './components/login/login.component';
+import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
 
 
 
