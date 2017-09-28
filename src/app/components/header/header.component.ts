@@ -9,19 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-    abaModal: string;
-    abaNav: string;
+    abaModal =
+    {
+      titulo: '',
+      value: ''
+    };
 
     constructor() { }
 
     ngOnInit() {
-        this.abaModal = 'login';
-        this.abaNav = 'home';
+      this.abaModal.value = 'login';
+      this.abaModal.titulo = 'Login';
     }
 
     switchAba() {
-        this.abaModal = this.abaModal === 'login' ? 'cadastro' : 'login';
+      this.abaModal.value = this.abaModal.value === 'login' ? 'cadastro' : 'login';
+      this.abaModal.titulo = this.abaModal.titulo === 'Login' ? 'Cadastro' : 'Login';
     }
-
 
 }

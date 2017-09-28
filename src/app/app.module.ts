@@ -13,6 +13,8 @@ import { FichaPathfinderComponent } from './components/ficha-pathfinder/ficha-pa
 import { CardFichasComponent } from './components/card-fichas/card-fichas.component';
 import { AttrPrimariosComponent } from './components/attr-primarios/attr-primarios.component';
 import { AttrDesComponent } from './components/attr-des/attr-des.component';
+import { ModalLoginComponent } from './components/modal-login/modal-login.component';
+import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AttrDesComponent } from './components/attr-des/attr-des.component';
     FichaPathfinderComponent,
     CardFichasComponent,
     AttrPrimariosComponent,
-    AttrDesComponent
+    AttrDesComponent,
+    ModalLoginComponent,
+    ModalCadastroComponent
   ],
   imports: [
     BrowserModule,

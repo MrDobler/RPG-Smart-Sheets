@@ -1,3 +1,4 @@
+import { FichaPathfinder } from './fichaPathfinder';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ficha-pathfinder.component.html',
   styleUrls: ['./ficha-pathfinder.component.css']
 })
+
+
+
 export class FichaPathfinderComponent implements OnInit {
 
+
+  public ficha = new FichaPathfinder();
   constructor() { }
 
   ngOnInit() {
