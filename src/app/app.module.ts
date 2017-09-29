@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,6 +15,9 @@ import { AttrDesComponent } from './components/attr-des/attr-des.component';
 import { ModalLoginComponent } from './components/modal-login/modal-login.component';
 import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadastro.component';
 import { AttrConComponent } from './components/attr-con/attr-con.component';
+import { AttrIntComponent } from './components/attr-int/attr-int.component';
+import { AttrSabComponent } from './components/attr-sab/attr-sab.component';
+import { AttrCarComponent } from './components/attr-car/attr-car.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { AttrConComponent } from './components/attr-con/attr-con.component';
     AttrDesComponent,
     ModalLoginComponent,
     ModalCadastroComponent,
-    AttrConComponent
+    AttrConComponent,
+    AttrIntComponent,
+    AttrSabComponent,
+    AttrCarComponent
   ],
   imports: [
     BrowserModule,
