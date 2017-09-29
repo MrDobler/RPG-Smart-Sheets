@@ -15,6 +15,7 @@ import { AttrPrimariosComponent } from './components/attr-primarios/attr-primari
 import { AttrDesComponent } from './components/attr-des/attr-des.component';
 import { ModalLoginComponent } from './components/modal-login/modal-login.component';
 import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadastro.component';
+import { AttrConComponent } from './components/attr-con/attr-con.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadast
     AttrPrimariosComponent,
     AttrDesComponent,
     ModalLoginComponent,
-    ModalCadastroComponent
+    ModalCadastroComponent,
+    AttrConComponent
   ],
   imports: [
     BrowserModule,
