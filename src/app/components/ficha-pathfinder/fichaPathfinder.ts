@@ -1,5 +1,5 @@
 export class FichaPathfinder {
-    public pcName: string;
+    public playerCharName: string;
     public pcTendency: string;
     public pcPlayer: string;
     public pcLvl: number;

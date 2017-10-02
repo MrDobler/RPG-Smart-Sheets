@@ -6,16 +6,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ficha-pathfinder.component.html',
   styleUrls: ['./ficha-pathfinder.component.css']
 })
-
-
-
 export class FichaPathfinderComponent implements OnInit {
 
 
   public ficha = new FichaPathfinder();
-  constructor() { }
+  public desabilitado = false;
 
   ngOnInit() {
+    this.ficha.playerCharName = 'Nome qualquer';
+    this.desabilitado = true;
   }
 
 }

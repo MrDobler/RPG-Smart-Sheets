@@ -1,5 +1,4 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { LoginComponent } from './../login/login.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

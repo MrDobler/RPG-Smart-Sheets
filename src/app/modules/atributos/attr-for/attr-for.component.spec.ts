@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AttrPrimariosComponent } from './attr-primarios.component';
+import { AttrForComponent } from './attr-for.component';
 
-describe('AttrPrimariosComponent', () => {
-  let component: AttrPrimariosComponent;
-  let fixture: ComponentFixture<AttrPrimariosComponent>;
+describe('AttrForComponent', () => {
+  let component: AttrForsComponent;
+  let fixture: ComponentFixture<AttrForsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AttrPrimariosComponent ]
+      declarations: [ AttrForsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AttrPrimariosComponent);
+    fixture = TestBed.createComponent(AttrForsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
