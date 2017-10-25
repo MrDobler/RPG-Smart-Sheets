@@ -1,189 +1,202 @@
 <app-header></app-header>
 <div class="container">
-    <div class="row">
-      <div class="col-md text-center titulo font-fichas">
-        <h1>Ficha Pathfinder</h1>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-      <div class="col-md-6 input-busca text-center font-fichas">
-          <h3>Busque o atributo!</h3>
-          <div class="input-group">
+        <div class="row">
+        <div class="col-md text-center titulo font-fichas">
+            <h1>Ficha Pathfinder</h1>
+        </div>
+        </div>
+</div>
+<div class="container">
+    <div class="col-md-6 input-busca text-center font-fichas">
+        <h3>Busque o atributo!</h3>
+        <div class="input-group">
             <input type="text" class="form-control" placeholder="Busque por...">
             <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">Vai!</button>
+                <button class="btn btn-secondary" type="button">Vai!</button>
             </span>
-          </div>
-      </div>
-  </div>
+        </div>
+    </div>
+</div>
 
-  <div class="container">
-    <br>
-    <br>
-    <div class="card text-center">
-        <br>
-        <h2 class="text-center">Atributos Principais</h2>
-        <br>
-        <form class="fonte-tamanho">
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="pcName">Nome do Personagem</label>
-              <input type="text" class="form-control" name="pcName"
-              [(ngModel)]="ficha.playerCharName" [attr.disabled]="desabilitado ? 'disabled' : null">
-            </div>
-            <div class="form-group col-md-1">
-              <label for="tendency">Tendência</label>
-              <input type="text" class="form-control" name="pcTendency">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="player">Jogador</label>
-              <input type="text" class="form-control" name="player">
-            </div>
-            <div class="form-group col-md-1">
-                <label for="lvl">Nível</label>
-                <select class="form-control" name="lvl" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                  </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="divinity">Divindade</label>
-              <input type="text" class="form-control" name="divinity">
-            </div>
-            <div class="form-group col-md-3">
-              <label for="birthPlace">Terra Natal</label>
-              <input type="text" class="form-control" name="birthPlace">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-2">
-              <label for="race">Raça</label>
-              <input type="text" class="form-control" name="race">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="size">Tamanho</label>
-              <input type="text" class="form-control" name="size">
-            </div>
-            <div class="form-group col-md-1">
-              <label for="gender">Sexo</label>
-              <select class="form-control" name="gender" >
-                <option value="M">M</option>
-                <option value="F">F</option>
-              </select>
-            </div>
-            <div class="form-group col-md-1">
-              <label for="age">Idade</label>
-              <input type="text" class="form-control" name="age">
-            </div>
-            <div class="form-group col-md-1">
-              <label for="altura">Altura</label>
-              <input type="text" class="form-control" name="altura">
-            </div>
-            <div class="form-group col-md-1">
-              <label for="peso">Peso</label>
-              <input type="text" class="form-control" name="peso">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="cabelo">Idade</label>
-              <input type="text" class="form-control" name="cabelo">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="olhos">Olhos</label>
-              <input type="text" class="form-control" name="olhos">
-            </div>
-          </div>
+<div class="container">
+<br>
+<br>
+<div class="card text-center">
+<br>
+<h2 class="text-center">Atributos Principais</h2>
+<br>
+<form class="fonte-tamanho">
+<div class="row">
+    <div class="form-group col-md-3">
+        <label for="pcName">Nome do Personagem</label>
+        <input type="text" class="form-control" name="pcName"
+        [(ngModel)]="ficha.playerCharName" [attr.disabled]="desabilitado ? 'disabled' : null">
+    </div>
+    <div class="form-group col-md-1">
+        <label for="tendency">Tendência</label>
+        <input type="text" class="form-control" name="pcTendency">
+    </div>
+    <div class="form-group col-md-2">
+        <label for="player">Jogador</label>
+        <input type="text" class="form-control" name="player">
+    </div>
+    <div class="form-group col-md-1">
+        <label for="lvl">Nível</label>
+        <select class="form-control" name="lvl" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+        <label for="divinity">Divindade</label>
+        <input type="text" class="form-control" name="divinity">
+    </div>
+    <div class="form-group col-md-3">
+        <label for="birthPlace">Terra Natal</label>
+        <input type="text" class="form-control" name="birthPlace">
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-md-2">
+        <label for="race">Raça</label>
+        <input type="text" class="form-control" name="race">
+    </div>
+    <div class="form-group col-md-2">
+        <label for="size">Tamanho</label>
+        <input type="text" class="form-control" name="size">
+    </div>
+    <div class="form-group col-md-1">
+        <label for="gender">Sexo</label>
+        <select class="form-control" name="gender" >
+            <option value="M">M</option>
+            <option value="F">F</option>
+        </select>
+    </div>
+    <div class="form-group col-md-1">
+        <label for="age">Idade</label>
+        <input type="text" class="form-control" name="age">
+    </div>
+    <div class="form-group col-md-1">
+        <label for="altura">Altura</label>
+        <input type="text" class="form-control" name="altura">
+    </div>
+    <div class="form-group col-md-1">
+        <label for="peso">Peso</label>
+        <input type="text" class="form-control" name="peso">
+    </div>
+    <div class="form-group col-md-2">
+        <label for="cabelo">Idade</label>
+        <input type="text" class="form-control" name="cabelo">
+    </div>
+    <div class="form-group col-md-2">
+        <label for="olhos">Olhos</label>
+        <input type="text" class="form-control" name="olhos">
+    </div>
+</div>
 
-
-          <div class="row">
-            <div class="col-md-5">
-              <div class="row">
-                <div class="col-md">
-                    <label for="tipo">Tipo</label>
-                </div>
-                <div class="col-md">
-                    <label for="valorAtrib">Valor</label>
-                </div>
-                <div class="col-md">
-                    <label for="modAtrib">Mod.Atrib.</label>
-                </div>
-                <div class="col-md">
-                    <label for="valorTemp">Val.Temp.</label>
-                </div>
-                <div class="col-md">
-                    <label for="modTemp">Mod.Temp.</label>
-                </div>
-                </div>
-                <app-attr-for></app-attr-for>
-                <app-attr-des></app-attr-des>
-                <app-attr-con></app-attr-con>
-                <app-attr-int></app-attr-int>
-                <app-attr-sab></app-attr-sab>
-                <app-attr-car></app-attr-car>
-              </div>
-              <div class="col-md-7">
-                  <div class="row">
-                    <div class="col-md">
-                        <label for="pontosDeVida">PV.Total</label>
-                        <input type="text" class="form-control" name="pontosDeVida">
-                    </div>
-                    <div class="col-md">
-                        <label for="reducaoDano">Reduc. Dano</label>
-                        <input type="text" class="form-control" name="reducaoDano">
-                    </div>
-                    <div class="col-md">
-                        <label for="pontoDeVidaAtual">PV.Atual</label>
-                        <input type="text" class="form-control" name="pontoDeVidaAtual">
-                    </div>
-                    <div class="col-md">
-                        <label for="danoNaoLetal">Dano Não Letal</label>
-                        <input type="text" class="form-control" name="danoNaoLetal">
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="outrosAttr">
-                  <br>
-                  <h2 class="text-center">Outros Atributos</h2>
-                  <br>
-                  <button type="button" class="btn btn-dark onclick()">Armas</button>
-                  <button type="button" class="btn btn-dark">Perícias</button>
-                  <button type="button" class="btn btn-dark">Magias</button>
-                  <button type="button" class="btn btn-dark">Talentos</button>
-                  <button type="button" class="btn btn-dark">Hab.Especial</button>
-                  <button type="button" class="btn btn-dark">Equipamentos</button>
-                </div>
-              </div>
-            </div>
-
-          <div class="row">
+<div class="row">
+    <div class="col-md-5">
+        <div class="row">
             <div class="col-md">
-              <button type="submit" class="btn btn-primary submit">Cadastrar</button>
+                <label for="tipo">Tipo</label>
             </div>
-          </div>
-        </form>
-     </div>
-  </div>
+            <div class="col-md">
+                <label for="valorAtrib">Valor</label>
+            </div>
+            <div class="col-md">
+                <label for="modAtrib">Mod.Atrib.</label>
+            </div>
+            <div class="col-md">
+                <label for="valorTemp">Val.Temp.</label>
+            </div>
+            <div class="col-md">
+                <label for="modTemp">Mod.Temp.</label>
+            </div>
+        </div>
+    <app-attr-for></app-attr-for>
+    <app-attr-des></app-attr-des>
+    <app-attr-con></app-attr-con>
+    <app-attr-int></app-attr-int>
+    <app-attr-sab></app-attr-sab>
+    <app-attr-car></app-attr-car>
+    </div>
+    <div class="col-md-7">
+        <div class="row">
+            <div class="col-md">
+                <label for="pontosDeVida">PV.Total</label>
+                <input type="text" class="form-control" name="pontosDeVida">
+            </div>
+            <div class="col-md">
+                <label for="reducaoDano">Reduc. Dano</label>
+                <input type="text" class="form-control" name="reducaoDano">
+            </div>
+            <div class="col-md">
+                <label for="pontoDeVidaAtual">PV.Atual</label>
+                <input type="text" class="form-control" name="pontoDeVidaAtual">
+            </div>
+            <div class="col-md">
+                <label for="danoNaoLetal">Dano Não Letal</label>
+                <input type="text" class="form-control" name="danoNaoLetal">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <label for="iniciativa">Iniciativa</label>
+                <input type="text" class="form-control" name="iniciativa">
+            </div>
+            <div class="col-md">
+                <label for="modDestreza">Mod. Destreza</label>
+                <input type="text" class="form-control" name="modDestreza">
+            </div>
+            <div class="col-md">
+                <label for="outro">Outro</label>
+                <input type="text" class="form-control" name="outro">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="outrosAttr">
+            <br>
+            <h2 class="text-center">Outros Atributos</h2>
+            <br>
+            <button type="button" class="btn btn-dark">Armas</button>
+            <button type="button" class="btn btn-dark">Perícias</button>
+            <button type="button" class="btn btn-dark">Magias</button>
+            <button type="button" class="btn btn-dark">Talentos</button>
+            <button type="button" class="btn btn-dark">Hab.Especial</button>
+            <button type="button" class="btn btn-dark">Equipamentos</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+        <button type="submit" class="btn btn-primary submit">Criar</button>
+    </div>
+</div>
+</form>
+</div>
+</div>
 
