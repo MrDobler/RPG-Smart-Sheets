@@ -25,7 +25,7 @@
         <br>
         <h2 class="text-center">Atributos Principais</h2>
         <br>
-        <form class="fonte-tamanho">
+        <div class="fonte-tamanho">
           <div class="row">
             <div class="form-group col-md-3">
               <label for="pcName">Nome do Personagem</label>
@@ -92,15 +92,15 @@
             </div>
             <div class="form-group col-md-1">
               <label for="age">Idade</label>
-              <input type="text" class="form-control" name="age">
+              <input type="int" class="form-control" name="age">
             </div>
             <div class="form-group col-md-1">
               <label for="altura">Altura</label>
-              <input type="text" class="form-control" name="altura">
+              <input type="int" class="form-control" name="altura">
             </div>
             <div class="form-group col-md-1">
               <label for="peso">Peso</label>
-              <input type="text" class="form-control" name="peso">
+              <input type="int" class="form-control" name="peso">
             </div>
             <div class="form-group col-md-2">
               <label for="cabelo">Idade</label>
@@ -111,78 +111,61 @@
               <input type="text" class="form-control" name="olhos">
             </div>
           </div>
-
-
-          <div class="row">
-            <div class="col-md-5">
-              <div class="row">
-                <div class="col-md">
-                    <label for="tipo">Tipo</label>
-                </div>
-                <div class="col-md">
-                    <label for="valorAtrib">Valor</label>
-                </div>
-                <div class="col-md">
-                    <label for="modAtrib">Mod.Atrib.</label>
-                </div>
-                <div class="col-md">
-                    <label for="valorTemp">Val.Temp.</label>
-                </div>
-                <div class="col-md">
-                    <label for="modTemp">Mod.Temp.</label>
-                </div>
-                </div>
-                <app-attr-for></app-attr-for>
-                <app-attr-des></app-attr-des>
-                <app-attr-con></app-attr-con>
-                <app-attr-int></app-attr-int>
-                <app-attr-sab></app-attr-sab>
-                <app-attr-car></app-attr-car>
-              </div>
-              <div class="col-md-7">
-                  <div class="row">
-                    <div class="col-md">
-                        <label for="pontosDeVida">PV.Total</label>
-                        <input type="text" class="form-control" name="pontosDeVida">
-                    </div>
-                    <div class="col-md">
-                        <label for="reducaoDano">Reduc. Dano</label>
-                        <input type="text" class="form-control" name="reducaoDano">
-                    </div>
-                    <div class="col-md">
-                        <label for="pontoDeVidaAtual">PV.Atual</label>
-                        <input type="text" class="form-control" name="pontoDeVidaAtual">
-                    </div>
-                    <div class="col-md">
-                        <label for="danoNaoLetal">Dano Não Letal</label>
-                        <input type="text" class="form-control" name="danoNaoLetal">
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-
+          <div class="float-md-left">
             <div class="row">
-              <div class="col-md-12">
-                <div class="outrosAttr">
-                  <br>
-                  <h2 class="text-center">Outros Atributos</h2>
-                  <br>
-                  <button type="button" class="btn btn-dark onclick()">Armas</button>
-                  <button type="button" class="btn btn-dark">Perícias</button>
-                  <button type="button" class="btn btn-dark">Magias</button>
-                  <button type="button" class="btn btn-dark">Talentos</button>
-                  <button type="button" class="btn btn-dark">Hab.Especial</button>
-                  <button type="button" class="btn btn-dark">Equipamentos</button>
+                <div class="col-md-1">
+                  <label for="tipo">Tipo</label>
+                </div>
+                <div class="col-md-1">
+                  <label for="valorAtrib">Valor</label>
+                </div>
+                <div class="col-md-1">
+                  <label for="modAtrib">Mod.Atrib.</label>
+                </div>
+                <div class="col-md-1">
+                  <label for="valorTemp">Val.Temp.</label>
+                </div>
+                <div class="col-md-1">
+                  <label for="modTemp">Mod.Temp.</label>
                 </div>
               </div>
-            </div>
+              <app-attr-for></app-attr-for>
+              <app-attr-des></app-attr-des>
+              <app-attr-con></app-attr-con>
+              <app-attr-int></app-attr-int>
+              <app-attr-sab></app-attr-sab>
+              <app-attr-car></app-attr-car>
+          </div><br>
 
-          <div class="row">
-            <div class="col-md">
-              <button type="submit" class="btn btn-primary submit">Cadastrar</button>
+          <!-- <div class="col-md-1">
+              <label for="pcRD">RD</label>
             </div>
+            <div class="col-md-1">
+              <label for="pcFerimentos">Ferimentos</label>
+            </div>
+            <div class="col-md-2">
+              <label for="pcFerimentos">Ferimentos</label>
+            </div> -->
+
+          <div class="outrosAttr">
+            <br>
+            <h2 class="text-center">Outros Atributos</h2>
+            <br>
+            <button type="button" class="btn btn-dark">Armas</button>
+            <button type="button" class="btn btn-dark">Perícias</button>
+            <button type="button" class="btn btn-dark">Magias</button>
+            <button type="button" class="btn btn-dark">Talentos</button>
+            <button type="button" class="btn btn-dark">Hab.Especial</button>
+            <button type="button" class="btn btn-dark">Equipamentos</button>
+
+
+
           </div>
+
+          <div class="">
+
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
      </div>
   </div>

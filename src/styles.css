@@ -33,4 +33,9 @@ hr.style18:before {
   border-radius: 20px;
 }
 
-
+.label-attr{
+  background-color: #343a40;
+  width: 50px;
+  color: #FFF;
+  margin-left: auto;
+}

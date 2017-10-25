@@ -11,6 +11,7 @@ export class AttrForComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
