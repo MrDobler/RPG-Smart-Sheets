@@ -211,19 +211,23 @@
             <h2 class="text-center titulo">Outros Atributos</h2>
             <br>
             <button (click)="trocaContexto = 1" type="button" class="btn btn-dark">Armas</button>
-            <button type="button" class="btn btn-dark">Deslocamento</button>
-            <button type="button" class="btn btn-dark">Perícias</button>
-            <button type="button" class="btn btn-dark">Magias</button>
-            <button type="button" class="btn btn-dark">Talentos</button>
-            <button type="button" class="btn btn-dark">Hab.Especial</button>
-            <button type="button" class="btn btn-dark">Equipamentos</button>
+            <button (click)="trocaContexto = 2" type="button" class="btn btn-dark">Deslocamento</button>
+            <button (click)="trocaContexto = 3" type="button" class="btn btn-dark">Perícias</button>
+            <button (click)="trocaContexto = 4" type="button" class="btn btn-dark">Magias</button>
+            <button (click)="trocaContexto = 5" type="button" class="btn btn-dark">Talentos</button>
+            <button (click)="trocaContexto = 6" type="button" class="btn btn-dark">Hab.Especial</button>
+            <button (click)="trocaContexto = 7" type="button" class="btn btn-dark">Equipamentos</button>
         </div>
     </div>
 </div>
 <div>
   <app-armas *ngIf="trocaContexto == 1"></app-armas>
-
-
+  <app-deslocamento *ngIf="trocaContexto == 2"></app-deslocamento>
+  <app-pericias *ngIf="trocaContexto == 3"></app-pericias>
+  <app-magias *ngIf="trocaContexto == 4"></app-magias>
+  <app-talentos *ngIf="trocaContexto == 5"></app-talentos>
+  <app-habilidades-especiais *ngIf="trocaContexto == 6"></app-habilidades-especiais>
+  <app-equipamentos *ngIf="trocaContexto == 7"></app-equipamentos>
 </div>
 
 
