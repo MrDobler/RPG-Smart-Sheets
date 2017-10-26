@@ -6,6 +6,7 @@ import { AttrForComponent } from '../atributos/attr-for/attr-for.component';
 import { AttrDesComponent } from '../atributos/attr-des/attr-des.component';
 import { AttrIntComponent } from '../atributos/attr-int/attr-int.component';
 import { AttrSabComponent } from '../atributos/attr-sab/attr-sab.component';
+import { ClasseArmaduraComponent } from './classe-armadura/classe-armadura.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AttrSabComponent } from '../atributos/attr-sab/attr-sab.component';
     AttrDesComponent,
     AttrForComponent,
     AttrIntComponent,
-    AttrSabComponent
+    AttrSabComponent,
+    ClasseArmaduraComponent
   ],
   imports: [
     CommonModule
@@ -25,7 +27,8 @@ import { AttrSabComponent } from '../atributos/attr-sab/attr-sab.component';
     AttrDesComponent,
     AttrForComponent,
     AttrIntComponent,
-    AttrSabComponent
+    AttrSabComponent,
+    ClasseArmaduraComponent
   ],
   providers: []
 })

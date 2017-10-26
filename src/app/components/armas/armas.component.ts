@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {Arma} from './arma';
 
 @Component({
   selector: 'app-armas',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArmasComponent implements OnInit {
 
-  constructor() { }
+@Input() public arma = new Arma();
 
-  ngOnInit() {
+  constructor() {
+    this.arma.nome = 'Espada Bastarda';
+    this.arma.bonus = 2;
+    this.arma.critico = 'x2';
+    this.arma.tipo = 'Espada Larga';
+    this.arma.alcance = 5;
+    this.arma.municao = '';
+    this.arma.dano = '2d6';
   }
 
+  ngOnInit() {
+
+  }
 }

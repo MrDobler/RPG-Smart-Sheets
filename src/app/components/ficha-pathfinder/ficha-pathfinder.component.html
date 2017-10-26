@@ -172,47 +172,45 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-2">
-                  <label for="tipo">Tipo</label>
-              </div>
-              <div class="col-md-2">
-                  <label for="total">Total</label>
-              </div>
-              <div class="col-md-1">
-                  <label for="bonus">Bonus</label>
-              </div>
-              <div class="col-md-2">
-                  <label for="modSaveAtrib">Mod.Atrib.</label>
-              </div>
-              <div class="col-md-2">
-                  <label for="modSaveMagia">Mod.Magia</label>
-              </div>
-              <div class="col-md-1">
-                  <label for="outros">Outros</label>
-              </div>
-              <div class="col-md-1">
-                <label for="modSaveTemp">Mod.Temp.</label>
-              </div>
-            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="tipo">Tipo</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="total">Total</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label for="bonus">Bonus</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="modSaveAtrib">Mod.Atrib.</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="modSaveMagia">Mod.Magia</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label for="outros">Outros</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label for="modSaveTemp">Mod.Temp.</label>
+                    </div>
+                </div>
             <app-save-fortitude></app-save-fortitude>
             <app-save-reflexo></app-save-reflexo>
             <app-save-vontade></app-save-vontade>
-          </div>
+            </div>
         </div>
-
     </div>
 </div>
-
-
+<app-classe-armadura></app-classe-armadura>
 <div class="row">
     <div class="col-md-12">
-        <div class="outrosAttr">
+        <div>
             <br>
-            <h2 class="text-center">Outros Atributos</h2>
+            <h2 class="text-center titulo">Outros Atributos</h2>
             <br>
-            <button type="button" class="btn btn-dark">Armas</button>
+            <button (click)="trocaContexto = 1" type="button" class="btn btn-dark">Armas</button>
             <button type="button" class="btn btn-dark">Deslocamento</button>
             <button type="button" class="btn btn-dark">Perícias</button>
             <button type="button" class="btn btn-dark">Magias</button>
@@ -222,6 +220,14 @@
         </div>
     </div>
 </div>
+<div>
+  <app-armas *ngIf="trocaContexto == 1"></app-armas>
+
+
+</div>
+
+
+<h1>{{ arma.nome }}</h1>
 
 <div class="row">
     <div class="col-md">

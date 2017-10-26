@@ -47,3 +47,8 @@ hr.style18:before {
   color: #FFF;
   margin-left: auto;
 }
+
+.titulo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
