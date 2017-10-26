@@ -13,6 +13,7 @@ import { ModalLoginComponent } from './components/modal-login/modal-login.compon
 import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadastro.component';
 import { ArmasComponent } from './components/armas/armas.component';
 import { AtributosModule } from './modules/atributos/atributos.module';
+import { SavingThrowModule } from './modules/saving-throw/saving-throw.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AtributosModule } from './modules/atributos/atributos.module';
     BrowserModule,
     FormsModule,
     routing,
-    AtributosModule
+    AtributosModule,
+    SavingThrowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

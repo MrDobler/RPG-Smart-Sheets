@@ -39,3 +39,11 @@ hr.style18:before {
   color: #FFF;
   margin-left: auto;
 }
+
+
+.label-save{
+  background-color: #343a40;
+  width: 100px;
+  color: #FFF;
+  margin-left: auto;
+}
