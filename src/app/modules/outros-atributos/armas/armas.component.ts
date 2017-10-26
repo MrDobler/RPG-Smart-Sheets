@@ -1,5 +1,6 @@
+import { Arma } from './../armas/arma';
 import { Component, OnInit, Input } from '@angular/core';
-import {Arma} from './arma';
+
 
 @Component({
   selector: 'app-armas',

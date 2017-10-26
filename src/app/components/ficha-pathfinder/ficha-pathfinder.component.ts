@@ -1,3 +1,4 @@
+import { OutrosAtributosModule } from './../../modules/outros-atributos/outros-atributos.module';
 import { Arma } from '../../modules/outros-atributos/armas/arma';
 import { FichaPathfinder } from './fichaPathfinder';
 import { Component, OnInit } from '@angular/core';
