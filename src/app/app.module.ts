@@ -11,9 +11,9 @@ import { FichaPathfinderComponent } from './components/ficha-pathfinder/ficha-pa
 import { CardFichasComponent } from './components/card-fichas/card-fichas.component';
 import { ModalLoginComponent } from './components/modal-login/modal-login.component';
 import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadastro.component';
-import { ArmasComponent } from './components/armas/armas.component';
 import { AtributosModule } from './modules/atributos/atributos.module';
 import { SavingThrowModule } from './modules/saving-throw/saving-throw.module';
+import { OutrosAtributosModule } from './modules/outros-atributos/outros-atributos.module';
 
 @NgModule({
   declarations: [
@@ -25,15 +25,15 @@ import { SavingThrowModule } from './modules/saving-throw/saving-throw.module';
     FichaPathfinderComponent,
     CardFichasComponent,
     ModalLoginComponent,
-    ModalCadastroComponent,
-    ArmasComponent
+    ModalCadastroComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     routing,
     AtributosModule,
-    SavingThrowModule
+    SavingThrowModule,
+    OutrosAtributosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
