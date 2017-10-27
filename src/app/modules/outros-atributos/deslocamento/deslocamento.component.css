@@ -2,9 +2,15 @@
   background-color: #343a40;
   width: 150px;
   color: #FFF;
-  margin-left: auto;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  margin-top: 5px;
 }
 
 .deslocamento {
   margin-top: 1em;
+}
+
+.row2{
+  margin-left: 2em;
 }
