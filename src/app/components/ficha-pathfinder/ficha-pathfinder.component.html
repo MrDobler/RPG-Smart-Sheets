@@ -220,7 +220,7 @@
         </div>
     </div>
 </div>
-<div>
+<div class="outrosAtributos">
     <app-armas *ngIf="trocaContexto == 1"></app-armas>
     <app-deslocamento *ngIf="trocaContexto == 2"></app-deslocamento>
     <app-pericias *ngIf="trocaContexto == 3"></app-pericias>
@@ -229,11 +229,7 @@
     <app-habilidades-especiais *ngIf="trocaContexto == 6"></app-habilidades-especiais>
     <app-equipamentos *ngIf="trocaContexto == 7"></app-equipamentos>
 </div>
-
-
-<h1>{{ arma.nome }}</h1>
-
-<div class="row">
+<div class="row btn-criar">
     <div class="col-md">
         <button type="submit" class="btn btn-primary submit">Criar</button>
     </div>

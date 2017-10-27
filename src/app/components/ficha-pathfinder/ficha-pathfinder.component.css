@@ -14,3 +14,19 @@
 .submit {
   margin-top: 1em;
 }
+
+.btn-criar {
+  margin-bottom: 2em;
+}
+
+.outrosAtributos {
+  margin-top: 2em;
+  border: 1px solid #343a40;
+  border-radius: 25px;
+  margin-left:2em;
+  margin-right:2em;
+}
+
+.card {
+  margin-bottom: 2em;
+}
