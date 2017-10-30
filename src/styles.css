@@ -52,3 +52,7 @@ hr.style18:before {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+.number {
+  font-family: "Roboto";
+}

@@ -3,8 +3,8 @@
 
     <h2 class="titulo">Armas</h2>
 
-    <table class="table table-bordered">
-        <thead class="thead-dark">
+    <table class="table table-bordered border">
+        <thead class="thead-inverse">
             <tr>
                 <th scope="col" colspan="2">Arma</th>
                 <th scope="col">Bônus de Ataque</th>
@@ -14,13 +14,13 @@
         <tbody >
             <tr>
                 <td colspan="2">{{ arma.nome }}</td>
-                <td>{{ arma.bonus }}</td>
-                <td>{{ arma.critico }}</td>
+                <td class="number">{{ arma.bonus }}</td>
+                <td class="number">{{ arma.critico }}</td>
             </tr>
         </tbody>
     </table>
-  <table class="table table-bordered">
-      <thead class="thead-dark">
+  <table class="table table-bordered border">
+      <thead class="thead-inverse">
         <tr>
             <th scope="col">Tipo</th>
             <th scope="col">Alcance</th>
@@ -31,9 +31,9 @@
     <tbody>
       <tr>
         <td>{{ arma.tipo }}</td>
-        <td>{{ arma.alcance }}</td>
+        <td class="number">{{ arma.alcance }}</td>
         <td>{{ arma.municao }}</td>
-        <td>{{ arma.dano }}</td>
+        <td class="number">{{ arma.dano }}</td>
       </tr>
     </tbody>
   </table>

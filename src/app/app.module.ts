@@ -14,6 +14,7 @@ import { ModalCadastroComponent } from './components/modal-cadastro/modal-cadast
 import { AtributosModule } from './modules/atributos/atributos.module';
 import { SavingThrowModule } from './modules/saving-throw/saving-throw.module';
 import { OutrosAtributosModule } from './modules/outros-atributos/outros-atributos.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OutrosAtributosModule } from './modules/outros-atributos/outros-atribut
     FichaPathfinderComponent,
     CardFichasComponent,
     ModalLoginComponent,
-    ModalCadastroComponent
+    ModalCadastroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
