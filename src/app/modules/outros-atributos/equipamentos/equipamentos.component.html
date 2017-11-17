@@ -6,7 +6,7 @@
     <table class="table table-bordered border">
         <thead class="thead-inverse">
             <tr>
-                <th scope="col" colspan="3">Equipamento</th>
+                <th scope="col" colspan="3">Lista de Equipamentos</th>
             </tr>
         </thead>
         <tbody >
@@ -20,9 +20,9 @@
             </tr>
         </tbody>
     </table>
-    <input class="form-control" id="equipamentoNome">
-    <input  class="form-control" id="equipamentoPeso">
-    <button class="btn btn-primary" (click)="addEquipamento(equipamentos)">Adicionar Equipamento</button>
+    <input class="form-control" id="equipamentoNome" [(ngModel)]='equipamento.nome'>
+    <input  class="form-control" id="equipamentoPeso" [(ngModel)]='equipamento.peso'>
+    <button class="btn btn-primary" (click)="addEquipamento(equipamento)">Adicionar Equipamento</button>
 </div>
 </div>
 

@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DeslocamentoComponent } from './deslocamento/deslocamento.component';
@@ -8,9 +9,11 @@ import { TalentosComponent } from './talentos/talentos.component';
 import { HabilidadesEspeciaisComponent } from './habilidades-especiais/habilidades-especiais.component';
 import { EquipamentosComponent } from './equipamentos/equipamentos.component';
 
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   declarations: [
     DeslocamentoComponent,
