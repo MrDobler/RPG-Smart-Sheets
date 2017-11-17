@@ -6,8 +6,4 @@ export class Arma {
   public alcance: number;
   public municao: string;
   public dano: string;
-
-  Arma() {
-    this.municao = 'JAJAJA';
-  }
 }

@@ -9,6 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ArmasComponent implements OnInit {
 
+
+
 @Input() public arma = new Arma();
 
   constructor() {

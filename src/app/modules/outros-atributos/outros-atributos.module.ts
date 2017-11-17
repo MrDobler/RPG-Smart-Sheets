@@ -11,27 +11,27 @@ import { EquipamentosComponent } from './equipamentos/equipamentos.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
-  declarations: [
-    DeslocamentoComponent,
-    ArmasComponent,
-    PericiasComponent,
-    MagiasComponent,
-    TalentosComponent,
-    HabilidadesEspeciaisComponent,
-    EquipamentosComponent
-  ],
-  exports: [
-    DeslocamentoComponent,
-    ArmasComponent,
-    PericiasComponent,
-    MagiasComponent,
-    TalentosComponent,
-    HabilidadesEspeciaisComponent,
-    EquipamentosComponent
-  ],
+    imports: [
+        CommonModule,
+        FormsModule
+    ],
+    declarations: [
+        DeslocamentoComponent,
+        ArmasComponent,
+        PericiasComponent,
+        MagiasComponent,
+        TalentosComponent,
+        HabilidadesEspeciaisComponent,
+        EquipamentosComponent
+    ],
+    exports: [
+        DeslocamentoComponent,
+        ArmasComponent,
+        PericiasComponent,
+        MagiasComponent,
+        TalentosComponent,
+        HabilidadesEspeciaisComponent,
+        EquipamentosComponent
+    ],
 })
 export class OutrosAtributosModule { }

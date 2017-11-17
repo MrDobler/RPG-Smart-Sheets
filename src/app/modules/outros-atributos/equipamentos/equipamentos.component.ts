@@ -11,8 +11,8 @@ export class EquipamentosComponent implements OnInit {
 
   @Input() equipamentos = [
     {
-      nome : 'Espada Bastarda',
-      peso : 10.0
+      nome : 'Corda',
+      peso : 2.0
     }
   ];
 
@@ -21,8 +21,8 @@ export class EquipamentosComponent implements OnInit {
   ngOnInit() {}
 
   addEquipamento(equipamento) {
-      let cloneEquipamento = Object.assign({}, equipamento);
-      this.equipamentos.push(cloneEquipamento);
+      let valorEquipamento = Object.assign({}, equipamento);
+      this.equipamentos.push(valorEquipamento);
       this.equipamento = new Equipamento();
   }
 }
