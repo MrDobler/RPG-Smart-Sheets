@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipamentosComponent implements OnInit {
 
+  equipamentos = [
+    {
+      nome : 'Espada Bastarda',
+      peso : 10.0
+    }
+  ];
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  addEquipamento(equipamentos) {
+    this.equipamentos.push(equipamentos.nome, equipamentos.peso);
+  }
 }

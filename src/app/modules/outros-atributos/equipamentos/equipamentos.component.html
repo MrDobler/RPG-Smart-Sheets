@@ -1,3 +1,28 @@
-<p>
-  equipamentos works!
-</p>
+<div class="row">
+  <div class="col-md-6" style="margin:auto">
+
+    <h2 class="titulo">Equipamentos</h2>
+
+    <table class="table table-bordered border">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col" colspan="3">Equipamento</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td colspan="2">Item</td>
+                <td>Peso</td>
+            </tr>
+            <tr *ngFor="let equip of equipamentos">
+                <td colspan="2">{{ equip.nome }}</td>
+                <td>{{ equip.peso }}Kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <input class="form-control" id="equipamentoNome">
+    <input  class="form-control" id="equipamentoPeso">
+    <button class="btn btn-primary" (click)="addEquipamento(equipamentos)">Adicionar Equipamento</button>
+</div>
+</div>
+
