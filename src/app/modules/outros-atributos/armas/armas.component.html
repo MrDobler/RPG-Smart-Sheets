@@ -1,42 +1,76 @@
 <div class="row">
-  <div class="col-md-6" style="margin:auto">
+    <div class="col-md-6" style="margin:auto">
 
-    <h2 class="titulo">Armas</h2>
-
-    <table class="table table-bordered border">
-        <thead class="thead-inverse">
-            <tr>
-                <th scope="col" colspan="2">Arma</th>
-                <th scope="col">Bônus de Ataque</th>
-                <th scope="col">Crítico</th>
-            </tr>
-        </thead>
-        <tbody >
-            <tr>
-                <td colspan="2">{{ arma.nome }}</td>
-                <td class="number">{{ arma.bonus }}</td>
-                <td class="number">{{ arma.critico }}</td>
-            </tr>
-        </tbody>
-    </table>
-  <table class="table table-bordered border">
-      <thead class="thead-inverse">
-        <tr>
-            <th scope="col">Tipo</th>
-            <th scope="col">Alcance</th>
-            <th scope="col">Munição</th>
-            <th scope="col">Dano</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{{ arma.tipo }}</td>
-        <td class="number">{{ arma.alcance }}</td>
-        <td>{{ arma.municao }}</td>
-        <td class="number">{{ arma.dano }}</td>
-      </tr>
-    </tbody>
-  </table>
+        <h2 class="titulo">Armas</h2>
+        <div *ngFor="let arma of armas">
+            <table  class="table table-sm table-bordered">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th scope="col" colspan="2">Arma</th>
+                        <th scope="col">Bônus de Ataque</th>
+                        <th scope="col">Crítico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">{{ arma.nome }}</td>
+                        <td class="number">+{{ arma.bonus }}</td>
+                        <td class="number">x{{ arma.critico }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Alcance</th>
+                        <th scope="col">Munição</th>
+                        <th scope="col">Dano</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ arma.tipo }}</td>
+                        <td class="number">{{ arma.alcance }}m</td>
+                        <td>{{ arma.municao }}</td>
+                        <td class="number">{{ arma.dano }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
+<div class="col-md-6" style="margin: auto">
+    <hr>
+    <div class="row addEquip">
+        <div class="col-md-6">
+            <label for="nomeArma">Nome</label>
+            <input class="form-control" id="armaNome" [(ngModel)]='arma.nome'>
+        </div>
+        <div class="col-md-3">
+            <label for="bonusArma">Bônus</label>
+            <input  class="form-control number" id="armaBonus" [(ngModel)]='arma.bonus'>
+        </div>
+        <div class="col-md-3">
+            <label for="criticoArma">Crítico</label>
+            <input  class="form-control number" id="armaCritico" [(ngModel)]='arma.critico'>
+        </div>
+        <div class="col-md-3">
+            <label for="tipoArma">Tipo</label>
+            <input  class="form-control number" id="armaTipo" [(ngModel)]='arma.tipo'>
+        </div>
+        <div class="col-md-3">
+            <label for="alcanceArma">Alcance</label>
+            <input  class="form-control number" id="armaAlcance" [(ngModel)]='arma.alcance'>
+        </div>
+        <div class="col-md-3">
+            <label for="municaoArma">Munição</label>
+            <input  class="form-control number" id="armaMunicao" [(ngModel)]='arma.municao'>
+        </div>
+        <div class="col-md-3">
+            <label for="danoArma">Dano</label>
+            <input  class="form-control number" id="armaDano" [(ngModel)]='arma.dano'>
+        </div>
+        <button class="btn btn-primary" (click)="addArma(arma)">Adicionar Equipamento</button>
+    </div>
 </div>
-

@@ -9,21 +9,29 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ArmasComponent implements OnInit {
 
+    public arma = new Arma();
 
+    @Input() armas = [
+        {
+            nome : 'Espada Bastarda',
+            bonus : 2,
+            critico : 2,
+            tipo : 'Espada Longa',
+            alcance : 5,
+            municao : '',
+            dano : '2d6'
+        }
+    ];
 
-@Input() public arma = new Arma();
+    constructor() {}
 
-  constructor() {
-    this.arma.nome = 'Espada Bastarda';
-    this.arma.bonus = 2;
-    this.arma.critico = 'x2';
-    this.arma.tipo = 'Espada Larga';
-    this.arma.alcance = 5;
-    this.arma.municao = '';
-    this.arma.dano = '2d6';
-  }
+    ngOnInit() {
 
-  ngOnInit() {
+    }
 
-  }
+    addArma(arma) {
+        let valorArma = Object.assign({}, arma);
+        this.armas.push(valorArma);
+        this.arma = new Arma;
+    }
 }
