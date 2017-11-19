@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Deslocamento } from './deslocamento';
 
 @Component({
   selector: 'app-deslocamento',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeslocamentoComponent implements OnInit {
 
+  public desabilitado = false;
+
+  public deslocamento = new Deslocamento();
+
   constructor() { }
 
   ngOnInit() {
+    this.deslocamento.deslocArmadura = 2;
   }
 
 }

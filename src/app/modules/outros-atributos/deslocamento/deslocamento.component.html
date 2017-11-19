@@ -1,36 +1,41 @@
-<div class="row deslocamento">
-  <div class="col-md-12 ">
-      <h2 class="titulo">Deslocamento</h2>
-      <div class="row">
-          <div class="col-md-2 label-deslocamento">
-              <div for="deslocamento">DESLOCAMENTO</div>
-          </div>
-          <div class="form-group col-md-2">
-              <input type="text" class="form-control" id="deslocBasico" name="deslocBasico" placeholder="Deslocamento Básico">
-          </div>
-          <div class="form-group col-md-2">
-              <input type="text" class="form-control" id="deslocComArmadura" name="deslocComArmadura" placeholder="Com Armadura">
-          </div>
-          <div class="form-group col-md-1">
-              <input type="text" class="form-control" id="voo" name="voo" placeholder="Vôo">
-          </div>
-          <div class="form-group col-md-2">
-              <input type="text" class="form-control" id="manobrabilidade" name="manobrabilidade" placeholder="Manobrabilidade">
-          </div>
-          <div class="form-group col-md-1">
-              <input type="text" class="form-control" id="nado" name="nado" placeholder="Nado">
-          </div>
-          <div class="form-group col-md-1">
-              <input type="text" class="form-control" id="escalada" name="escalada" placeholder="Escalada">
-          </div>
-      </div>
-      <div class="row">
-          <div class="form-group col-md-2 row2">
-              <input type="text" class="form-control" id="escavacao" name="escavacao" placeholder="Escavação">
-          </div>
-          <div class="form-group col-md-9">
-              <input type="text" class="form-control" id="modTempDeslocamento" name="modTempDeslocamento" placeholder="Modificador de Deslocamento">
-          </div>
-      </div>
-  </div>
+<div class="row2 deslocamento">
+    <div class="col">
+        <h2 class="titulo">Deslocamento</h2>
+        <div class="row">
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Básico</label>
+                <input type="text" class="form-control number" id="deslocBasico" name="deslocBasico" placeholder="Deslocamento Básico" [(ngModel)]="deslocamento.deslocArmadura" [attr.disabled]="!desabilitado ? 'disabled' : null">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Armadura</label>
+                <input type="text" class="form-control number" id="deslocComArmadura" name="deslocComArmadura" placeholder="Com Armadura">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Vôo</label>
+                <input type="text" class="form-control number" id="voo" name="voo" placeholder="Vôo">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Manobrabilidade</label>
+                <input type="text" class="form-control number" id="manobrabilidade" name="manobrabilidade" placeholder="Manobrabilidade">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Nado</label>
+                <input type="text" class="form-control number" id="nado" name="nado" placeholder="Nado">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Escalada</label>
+                <input type="text" class="form-control number" id="escalada" name="escalada" placeholder="Escalada">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deslocBasico">Escavação</label>
+                <input type="text" class="form-control number" id="escavacao" name="escavacao" placeholder="Escavação">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="deslocBasico">Modificador de Deslocamento</label>
+                <input type="text" class="form-control number" id="modTempDeslocamento" name="modTempDeslocamento" placeholder="Modificador de Deslocamento">
+            </div>
+        </div>
+    </div>
 </div>

@@ -7,4 +7,3 @@ export class Arma {
   public municao: string;
   public dano: string;
 }
-
