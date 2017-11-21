@@ -21,8 +21,25 @@ export class EquipamentosComponent implements OnInit {
   ngOnInit() {}
 
   addEquipamento(equipamento) {
-      let valorEquipamento = Object.assign({}, equipamento);
-      this.equipamentos.push(valorEquipamento);
-      this.equipamento = new Equipamento();
+      if (!this.isEmptyObject(equipamento) && !this.startsWithSpace(equipamento)) {
+        let valorEquipamento = Object.assign({}, equipamento);
+        this.equipamentos.push(valorEquipamento);
+        this.equipamento = new Equipamento();
+      }
+  }
+
+  startsWithSpace(obj) {
+    for(let prop in obj) {
+        return (obj.prop.chatAt(0) === ' ');
+    }
+  }
+
+  isEmptyObject(obj) {
+    for(let prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            return false;
+        }
+    }
+    return true;
   }
 }

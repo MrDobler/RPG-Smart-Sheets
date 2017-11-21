@@ -3,9 +3,9 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
-  selector: 'app-armas',
-  templateUrl: './armas.component.html',
-  styleUrls: ['./armas.component.css']
+    selector: 'app-armas',
+    templateUrl: './armas.component.html',
+    styleUrls: ['./armas.component.css']
 })
 export class ArmasComponent implements OnInit {
 
@@ -30,8 +30,20 @@ export class ArmasComponent implements OnInit {
     }
 
     addArma(arma) {
-        let valorArma = Object.assign({}, arma);
-        this.armas.push(valorArma);
-        this.arma = new Arma;
+        if (!this.isEmptyObject(arma)) {
+            let valorArma = Object.assign({}, arma);
+            this.armas.push(valorArma);
+            this.arma = new Arma;
+        }
+    }
+
+    isEmptyObject(obj) {
+        for(let prop in obj) {
+            if (obj.hasOwnProperty(prop)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
