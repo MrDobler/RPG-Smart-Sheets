@@ -7,6 +7,16 @@ export class Arma {
   public municao: string;
   public dano: string;
 
+  constructor() {
+    this.nome = '';
+    this.bonus = null;
+    this.critico = null;
+    this.tipo = '';
+    this.alcance = null;
+    this.municao = '';
+    this.dano = '';
+  }
+
   public isValid(): boolean {
       let nomeValido: boolean = this.nome.trim() !== '' && typeof this.nome === 'string';
       let bonusValido: boolean = typeof this.bonus === 'number';
