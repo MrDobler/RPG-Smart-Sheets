@@ -45,31 +45,31 @@
     <div class="row addEquip">
         <div class="col-md-6">
             <label for="nomeArma">Nome</label>
-            <input class="form-control" id="armaNome" [(ngModel)]='arma.nome'>
+            <input class="form-control" id="armaNome" type="text" [(ngModel)]='arma.nome'>
         </div>
         <div class="col-md-3">
             <label for="bonusArma">Bônus</label>
-            <input  class="form-control number" id="armaBonus" [(ngModel)]='arma.bonus'>
+            <input  class="form-control number" id="armaBonus" type="number" [(ngModel)]='arma.bonus'>
         </div>
         <div class="col-md-3">
             <label for="criticoArma">Crítico</label>
-            <input  class="form-control number" id="armaCritico" [(ngModel)]='arma.critico'>
+            <input  class="form-control number" id="armaCritico" type="number"  [(ngModel)]='arma.critico'>
         </div>
         <div class="col-md-3">
             <label for="tipoArma">Tipo</label>
-            <input  class="form-control number" id="armaTipo" [(ngModel)]='arma.tipo'>
+            <input  class="form-control number" id="armaTipo" type="text" [(ngModel)]='arma.tipo'>
         </div>
         <div class="col-md-3">
             <label for="alcanceArma">Alcance</label>
-            <input  class="form-control number" id="armaAlcance" [(ngModel)]='arma.alcance'>
+            <input  class="form-control number" id="armaAlcance" type="number" [(ngModel)]='arma.alcance'>
         </div>
         <div class="col-md-3">
             <label for="municaoArma">Munição</label>
-            <input  class="form-control number" id="armaMunicao" [(ngModel)]='arma.municao'>
+            <input  class="form-control number" id="armaMunicao" type="text" [(ngModel)]='arma.municao'>
         </div>
         <div class="col-md-3">
             <label for="danoArma">Dano</label>
-            <input  class="form-control number" id="armaDano" [(ngModel)]='arma.dano'>
+            <input  class="form-control number" id="armaDano" type="text" [(ngModel)]='arma.dano'>
         </div>
         <button class="btn btn-primary" (click)="addArma(arma)">Adicionar Arma</button>
     </div>

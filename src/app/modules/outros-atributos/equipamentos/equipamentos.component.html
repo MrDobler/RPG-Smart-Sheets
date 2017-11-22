@@ -23,11 +23,11 @@
       <hr>
     <div class="col-md-6">
         <label for="nomeEquipamento">Nome</label>
-        <input class="form-control" id="equipamentoNome" [(ngModel)]='equipamento.nome'>
+        <input class="form-control" id="equipamentoNome" type="text" [(ngModel)]='equipamento.nome'>
     </div>
     <div class="col-md-6">
       <label for="pesoEquipamento">Peso</label>
-      <input  class="form-control number" id="equipamentoPeso" [(ngModel)]='equipamento.peso'>
+      <input  class="form-control number" id="equipamentoPeso" type="number" [(ngModel)]='equipamento.peso'>
     </div>
         <button class="btn btn-primary" (click)="addEquipamento(equipamento)">Adicionar Equipamento</button>
   </div>

@@ -29,21 +29,11 @@ export class ArmasComponent implements OnInit {
 
     }
 
-    addArma(arma) {
-        if (!this.isEmptyObject(arma)) {
-            let valorArma = Object.assign({}, arma);
-            this.armas.push(valorArma);
-            this.arma = new Arma;
+    addArma(arma: Arma) {
+        if (arma.isValid()) {
+          const valorArma = Object.assign({}, arma);
+          this.armas.push(valorArma);
+          this.arma = new Arma;
         }
-    }
-
-    isEmptyObject(obj) {
-        for(let prop in obj) {
-            if (obj.hasOwnProperty(prop)) {
-                return false;
-            }
-        }
-
-        return true;
     }
 }
