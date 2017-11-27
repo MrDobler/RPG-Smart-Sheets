@@ -1,4 +1,5 @@
 export class Arma {
+
   public nome: string;
   public bonus: number;
   public critico: number;
@@ -8,6 +9,7 @@ export class Arma {
   public dano: string;
 
   constructor() {
+
     this.nome = '';
     this.bonus = null;
     this.critico = null;
@@ -18,6 +20,7 @@ export class Arma {
   }
 
   public isValid(): boolean {
+    
       let nomeValido: boolean = this.nome.trim() !== '' && typeof this.nome === 'string';
       let bonusValido: boolean = typeof this.bonus === 'number';
       let criticoValido: boolean = typeof this.critico === 'number';

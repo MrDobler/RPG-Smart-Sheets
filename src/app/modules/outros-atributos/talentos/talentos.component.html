@@ -1,3 +1,35 @@
-<p>
-  talentos works!
-</p>
+<div class="row">
+  <div class="col-md-6" style="margin:auto">
+      <h2 class="titulo">Talentos</h2>
+      <table class="table table-sm table-bordered border">
+          <thead class="thead-inverse">
+              <tr>
+                  <th scope="col" colspan="3">Lista de Talentos</th>
+              </tr>
+          </thead>
+          <tbody >
+              <tr>
+                  <td colspan="2">Nome</td>
+                  <td>Descrição</td>
+              </tr>
+              <tr *ngFor="let talento of talentos">
+                  <td colspan="2">{{ talento.nome }}</td>
+                  <td class="number">{{ talento.descricao }}Kg</td>
+              </tr>
+          </tbody>
+      </table>
+
+<div class="row">
+    <hr>
+  <div class="col-md-6">
+      <label for="nomeTalento">Nome do Talento</label>
+      <input class="form-control" id="talentoNome" type="text" [(ngModel)]='talento.nome'>
+  </div>
+  <div class="col-md-6">
+    <label for="descTalento">Descrição do Talento</label>
+    <textarea name="talentoDesc" class="form-control" id="talendoDescricao" cols="30" rows="10" [(ngModel)]='talento.descricao'></textarea>
+  </div>
+      <button class="btn btn-primary" (click)="addTalento(talento)">Adicionar Talento</button>
+</div>
+</div>
+
