@@ -10,7 +10,7 @@ import { Talento } from './talento';
 
 export class TalentosComponent implements OnInit {
 
-  public talento : Talento;
+  public talento = new Talento();
 
   @Input() talentos = [
     {
@@ -22,11 +22,11 @@ export class TalentosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
+
   }
 
   addTalento(talento: Talento): void {
-    
+
     if (talento.isValid()) {
       let valorTalento = Object.assign({}, talento);
       this.talentos.push(valorTalento);
