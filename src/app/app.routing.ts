@@ -8,7 +8,7 @@ import { TelaPrincipalComponent } from './components/tela-principal/tela-princip
 const APP_ROUTES: Routes = [
   { path: '', component: TelaPrincipalComponent},
   { path: 'fichas', component: FichasComponent },
-  { path: 'fichaPathfinder', component: FichaPathfinderComponent }
+  { path: 'ficha-pathfinder', component: FichaPathfinderComponent }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

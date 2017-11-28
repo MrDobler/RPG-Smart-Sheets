@@ -12,19 +12,19 @@ export class CardFichasComponent implements OnInit {
       titulo: 'Ficha Pathfinder',
       acao: 'Abrir Ficha',
       imagem: '/assets/img/pathfinder.png',
-      link: '../fichaPathfinder'
+      link: '../ficha-pathfinder'
     },
     {
       titulo: 'Ficha Dungeons and Dragons 5',
       acao: 'Abrir Ficha',
       imagem: '/assets/img/d&d.jpg',
-      link: '../ficha'
+      link: '../ficha-d-and-d'
     },
     {
       titulo: 'Call of Cthulhu',
       acao: 'Abrir Ficha',
       imagem: '/assets/img/call_of_cthulhu.jpg',
-      link: '../ficha'
+      link: '../ficha-call-of-cthulhu'
     }
   ];
 
